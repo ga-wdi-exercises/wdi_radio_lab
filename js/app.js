@@ -3,7 +3,8 @@
 (function(){
   angular
     .module("wdiRadio", [
-      "ui.router"
+      "ui.router",
+      "songs"
     ])
     .config([
       "$stateProvider",
@@ -18,7 +19,9 @@
       })
       .state("songs", {
         url: "/songs",
-        templateUrl: "js/songs/index.html"
+        templateUrl: "js/songs/index.html",
+        controller: "SongsIndexController",
+        controllerAs: "SongsIndexViewModel"
       });
   }
 }());

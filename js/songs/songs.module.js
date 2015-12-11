@@ -2,5 +2,5 @@
 
 (function(){
   angular
-    .module("songs", [])
+    .module("songs", []);
 })();
