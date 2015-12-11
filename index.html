@@ -6,11 +6,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
 
     <script src="js/app.js"></script>
+    <script src="js/songs/songs.module.js"></script>
 
   </head>
   <body>
     <header>
-      WDI Radio
+      <a data-ui-sref="home">WDI Radio</a>
+      <nav>
+        <ul>
+          <li>
+            <a data-ui-sref="songs">Songs</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main data-ui-view></main>
