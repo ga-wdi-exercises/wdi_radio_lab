@@ -4,19 +4,11 @@
   angular
     .module("songs")
     .factory("SongFactory", [
+      "$resource",
       SongFactoryFunction
     ])
 
-    function SongFactoryFunction() {
-      var factory = {};
-
-      factory.query = function(){
-        return [
-          {title: "Song A"},
-          {title: "Song B"}
-        ];
-      }
-
-      return factory;
+    function SongFactoryFunction($resource) {
+      return $resource("http://localhost:3000/songs/:id");
     }
 })();
