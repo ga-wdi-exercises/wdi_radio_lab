@@ -1,7 +1,8 @@
 # WDI Radio Lab
 
-// Get backend setup, look at API endpoint
 ## Setup
+
+### API Setup
 
 Fork and clone [this repo](https://github.com/ga-dc/wdi_radio_api). We'll be using a rails back end. It'll be a single model CRUD API for songs. Lets go into this directory and run all our initial rails setup and run our server.
 
@@ -13,40 +14,42 @@ $ rake db:seed
 $ rails s
 ```
 
+This will be the backend we'll be using.
+
+> What follows are not explicit steps. Just guidelines to approach building out this angular application.
+
+### Angular Setup
+- Create a main directory for your `wdi_radio` application.
+- Create an `index.html` in your application's main directory.
+- Create a skeleton for your content and include all dependencies.
+- Create the main `app.js` file and create the module for this angular app.
+- Create a module that defines songs.
+
+
 ## UI-Router & Resources/Factories
 ### User Stories
 As a user, when we go to the app, we see a welcome page.
-As a user, we should be able to see all of our songs
+As a user, we should be able to see all of our songs in the database.
+As a user, we should be able to see a single song page.
 
-### Root Route
-- require libraries
-- define main `app.js`
-- add `ng-app`
-- add a `data-ui-view`
-- create main app module, inject `ui.router`
-- inject `songs` in main `app.js`
-- configure module with $stateProvider and a callback define call back with routes
-  - have a route to the root path of the app to be a welcome page
+### Router
+- Add a router to the `app.js`.
+- Add a state for the routes `/welcome` and `/songs`.
+- Create templates for these routes.
 
-> If we create a new file, make sure you add that dependency to the main `index.html`
+### Controller
+- Create a controller file and define a controller to handle songs.
 
-### songs
-- define a state(route) songs
-- add link to songs route in the header of the application
-- creates songs directory
-- create and define `songs.module.js`
+### Factory
 
+- Create a factor for songs that point to the API we setup earlier.
+- Remember to inject this dependency into the controller.
 
-- create `js/songs/index.html` template
-- load angular resource cdn
-- create `js/songs/song.factory.js`
-  - inject `$resource` and add callback
-  - use `$resource` to return an API call
-
-- create `js/songs/index.controller.js`
-  - inject factory dependency
-  - query for songs in the controller function
-  - in `app.js` add controller and controller as
-  - add ng-repeat to `js/songs/index.html` to display songs
+### Views
+- Use directives in the html to list all songs
+- Use directives in the html to view a single song(separate template)
 
 ### Bonus
+- Implement full CRUD for songs
+- Have the song show route be inside the index view.
+  - Such that when you click a song, it renders somewhere in the index, bonus points on the bonus: get the song to play when you click on it.
