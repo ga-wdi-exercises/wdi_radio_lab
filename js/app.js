@@ -23,23 +23,5 @@
         controller: "SongsIndexController",
         controllerAs: "SongsIndexViewModel"
       })
-      .state("songsShow", {
-        url: "/songs/:id",
-        templateUrl: "js/songs/show.html",
-        controller: "SongsShowController",
-        controllerAs: "SongsShowViewModel"
-      t});
-      .state("newSong", {
-        url: "/songs/new",
-        templateUrl: "js/songs/new.html",
-        controller: "SongsNewController",
-        controllerAs: "SongsNewViewModel"
-      })
-      .state("editSong", {
-        url: "/songs/:id/edit",
-        templateUrl: "js/songs/edit.html",
-        controller: "SongsEditController",
-        controllerAs: "SongsEditViewModel"
-      });
   }
 }());

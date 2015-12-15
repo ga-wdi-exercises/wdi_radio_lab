@@ -10,5 +10,6 @@
 
     function ControllerFunction(SongFactory){
       this.songs = SongFactory.query();
+      this.newSong = new SongFactory();
     }
 })();
