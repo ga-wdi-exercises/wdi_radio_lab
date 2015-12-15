@@ -29,5 +29,11 @@
         controller: "SongsShowController",
         controllerAs: "SongsShowViewModel"
       t});
+      .state("newSong", {
+        url: "/songs/new",
+        templateUrl: "js/songs/new.html",
+        controller: "SongsNewController",
+        controllerAs: "SongsNewViewModel"
+      });
   }
 }());
