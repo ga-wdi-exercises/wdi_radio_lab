@@ -17,5 +17,10 @@
           $state.go("songs", {}, {reload: true})
         })
       }
+      this.destroy = function(){
+        this.editSong.$delete({id: $stateParams.id}, function(response){
+          $state.go("songs", {}, {reload: true})
+        })
+      }
     }
 })();
