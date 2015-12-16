@@ -3,7 +3,7 @@
 <div data-ng-repeat="song in SongsIndexViewModel.songs">
   <div class="song">
     <p>
-      {{song.title}}
+      <a data-ui-sref="songsShow({id: song.id})">{{song.title}}</a>
     </p>
   </div>
 </div>

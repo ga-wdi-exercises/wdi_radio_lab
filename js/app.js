@@ -22,6 +22,12 @@
         templateUrl: "js/songs/index.html",
         controller: "SongsIndexController",
         controllerAs: "SongsIndexViewModel"
+      })
+      .state("songsShow", {
+        url: "/songs/:id",
+        templateUrl: "js/songs/show.html",
+        controller: "SongsShowController",
+        controllerAs: "SongsShowViewModel"
       });
   }
 }());
