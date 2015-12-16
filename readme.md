@@ -73,4 +73,12 @@ Plus:
 
 ### User Stories
 
-As an authenticated user, we should be able to
+- As a user, we should be able to identify ourselves (sign up, login, logout)
+- As an authorized user, we should be able to favorite
+
+### Add user authentication
+- User can sign up, login, logout
+- Authenticated user can favorite a song(s)
+
+### Tidy up
+- Review and clean up, especially directives
