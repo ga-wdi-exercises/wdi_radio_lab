@@ -14,7 +14,7 @@ $ rake db:seed
 $ rails s
 ```
 
-This will be the backend we'll be using.
+This will be the backend we'll be using, from http://localhost:3000.
 
 > What follows are not explicit steps. Just guidelines to approach building out this angular application.
 
@@ -26,7 +26,7 @@ This will be the backend we'll be using.
 - Create a module that defines songs.
 
 
-## UI-Router & Resources/Factories
+## UI-Router & Resources/Factories (Wednesday)
 ### User Stories
 As a user, when we go to the app, we see a welcome page.
 As a user, we should be able to see all of our songs in the database.
@@ -42,7 +42,7 @@ As a user, we should be able to see a single song page.
 
 ### Factory
 
-- Create a factor for songs that point to the API we setup earlier.
+- Create a factory for songs that point to the API we setup earlier.
 - Remember to inject this dependency into the controller.
 
 ### Views
@@ -51,5 +51,34 @@ As a user, we should be able to see a single song page.
 
 ### Bonus
 - Implement full CRUD for songs
-- Have the song show route be inside the index view.
-  - Such that when you click a song, it renders somewhere in the index, bonus points on the bonus: get the song to play when you click on it.
+
+## Custom Directive (Thursday)
+### User Stories
+
+The same as before.  We are refactoring existing functionality, not adding new features.
+Plus:
+- As a user, when we select a song it starts playing.  The world is a better place.
+
+### Refactor to Custom Directives
+- Convert your existing controllers to custom directives.  One at a time.  Commit early, commit often.
+
+### Bonus
+- Show the song on the index page.
+  - When you click a song, it renders somewhere in the index
+- Implement/refactor full CRUD for songs
+- Get the song to play
+
+
+## Authorization and Tidying up (Friday)
+
+### User Stories
+
+- As a user, we should be able to identify ourselves (sign up, login, logout)
+- As an authorized user, we should be able to favorite
+
+### Add user authentication
+- User can sign up, login, logout
+- Authenticated user can favorite a song(s)
+
+### Tidy up
+- Review and clean up, especially directives
