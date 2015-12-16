@@ -1,5 +1,7 @@
 # WDI Radio Lab
 
+Please fork this repo. On Friday, submit your work a **pull request**.
+
 ## Setup
 
 ### API Setup
