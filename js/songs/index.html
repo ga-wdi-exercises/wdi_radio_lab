@@ -4,8 +4,10 @@
 
 <!-- When New Form is visible -->
 <div data-ng-show="SongsIndexViewModel.newSong.visible">
-  <div data-song-form data-song="SongsIndexViewModel.newSong"></div>
-  <button type="button" data-ng-click="SongsIndexViewModel.newSong.visible = !SongsIndexViewModel.newSong.visible">Cancel</button>
+  <div class="song">
+    <div data-song-form data-song="SongsIndexViewModel.newSong"></div>
+    <button type="button" data-ng-click="SongsIndexViewModel.newSong.visible = !SongsIndexViewModel.newSong.visible">Cancel</button>
+  </div>
 </div>
 
 <!-- When New Form is not Visible  -->
