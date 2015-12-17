@@ -3,7 +3,7 @@
     .module("wdiRadio")
     .directive("authNav", function($auth) {
       return {
-        templateUrl: "js/auth_nav/_nav.html",
+        templateUrl: "js/auth_nav/nav.html",
         replace: true,
         link: function(scope) {
           scope.$on('auth:login-success', function(ev, user) {
