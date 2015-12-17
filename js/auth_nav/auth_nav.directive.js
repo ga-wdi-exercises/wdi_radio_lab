@@ -4,6 +4,7 @@
     .directive("authNav", function($auth) {
       return {
         templateUrl: "js/auth_nav/_nav.html",
+        replace: true,
         link: function(scope) {
           scope.$on('auth:login-success', function(ev, user) {
             scope.currentUser = user;

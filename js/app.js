@@ -24,9 +24,9 @@
 
     function RouterFunction($stateProvider){
       $stateProvider
-        .state("home", {
+        .state("Welcome", {
           url: "",
-          template: "Welcome to the World's Best Song App"
+          templateUrl: "js/welcome.html"
         })
         .state("songs", {
           url: "/songs",
