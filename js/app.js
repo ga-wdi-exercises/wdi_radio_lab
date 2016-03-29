@@ -23,11 +23,5 @@
           controller: "SongsIndexController",
           controllerAs: "SongsIndexViewModel"
         })
-        .state("signup", {
-          url: "/signup",
-          templateUrl: "js/users/new.html",
-          controller: "SessionsController",
-          controllerAs: "SessionsViewModel"
-        })
     } // closes Router Function
 }());

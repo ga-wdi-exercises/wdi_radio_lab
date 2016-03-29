@@ -18,7 +18,7 @@ main{
   padding:2em;
 }
 
-h1, h2, h3{
+h1, h2, h3, h4{
   font-family:'Luckiest Guy', sans-serif;
 }
 
@@ -34,6 +34,16 @@ h1{
 h2, h3{
   font-size:3em;
   letter-spacing:.05em;
+}
+
+h4{
+  font-size: 1.5em;
+  letter-spacing:.05em;
+  text-align: center;
+}
+
+a {
+  color: inherit;
 }
 
 .cf:after{
@@ -178,4 +188,5 @@ h2, h3{
   z-index:3;
   left:0;
   width:100%;
+  text-align: center;
 }
