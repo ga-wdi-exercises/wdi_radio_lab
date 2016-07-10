@@ -4,6 +4,7 @@
   angular
     .module("wdiRadio", [
       "ui.router",
+      "firebase",
       "songs"
     ])
     .config([

@@ -6,9 +6,11 @@
     .directive("songForm", [
       "SongFactory",
       "$state",
+      "$firebaseArray",
+      "$firebaseObject",
       SongFormDirectiveFunction
     ])
-    function SongFormDirectiveFunction(SongFactory, $state){
+    function SongFormDirectiveFunction(SongFactory, $state, $firebaseArray, $firebaseObject){
       return {
         templateUrl: "js/songs/form.html",
         scope: {
@@ -16,9 +18,9 @@
         },
         link: function(scope){
           scope.create = function(){
-            scope.song.$save(function(response){
-              $state.go("songs", {}, {reload: true})
-            })
+            var songsRef = firebase.database().ref("songs");
+            var songs = $firebaseArray(songsRef);
+            songs.$add(scope.song)
           }
           scope.update = function(){
             scope.song.$update({id: scope.song.id}, function(response){
