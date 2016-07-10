@@ -13,6 +13,11 @@
         templateUrl: "js/songs/player.html",
         scope: {
           song: "="
+        },
+        link: function (scope) {
+          scope.cancel = function () {
+            scope.song = null;
+          }
         }
       }
     }
