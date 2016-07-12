@@ -33,19 +33,19 @@
               }, update)
               var songChild = firebase.database().ref().child("songs/" + scope.song.$id)
               songChild.set(update).then(function () {
-                console.log("Sucess");
-                console.log(songChild);
+                console.log("update");
+                $state.go("songs", {}, {reload: true});
               })
             }
-            scope.song.showEditForm = !scope.song.showEditForm
           }
           scope.delete = function(){
-            console.log("deleting");
-            var songsRef = firebase.database().ref("songs");
-            var songs = $firebaseArray(songsRef)
-            songs.$remove(scope.song).then(function (song) {
-              $state.go("songs", {}, {reload: true});
-            })
+            if (scope.song.$id) {
+              var songChild = firebase.database().ref().child("songs/" + scope.song.$id);
+              songChild.remove().then(function () {
+                console.log("removed");
+                $state.go("songs", {}, {reload: true});
+              })
+            }
           }
         }
       }
