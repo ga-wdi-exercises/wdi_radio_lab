@@ -11,8 +11,11 @@
     ])
 
     function ControllerFunction($sce, $firebaseArray, $firebaseObject ){
+      var vm = this;
       var ref = firebase.database().ref().child("songs");
-      this.songs = $firebaseArray(ref);
+      $firebaseArray(ref).$loaded().then(function(songs) {
+        this.songs = songs;
+      }.bind(this));
       this.newSong = {};
       this.play = function(song){
         this.playSong = song
