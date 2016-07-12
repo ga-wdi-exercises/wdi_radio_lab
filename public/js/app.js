@@ -24,5 +24,5 @@
           controller: "SongsIndexController",
           controllerAs: "SongsIndexViewModel"
         })
-    } // closes Router Function
+    }
 }());
