@@ -6,12 +6,10 @@
     .controller("SongsIndexController", [
       "$sce",
       "$firebaseArray",
-      "$firebaseObject",
       ControllerFunction
     ])
 
-    function ControllerFunction($sce, $firebaseArray, $firebaseObject ){
-      var vm = this;
+    function ControllerFunction ($sce, $firebaseArray){
       var ref = firebase.database().ref().child("songs");
       $firebaseArray(ref).$loaded().then(function(songs) {
         this.songs = songs;
