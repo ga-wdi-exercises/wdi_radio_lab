@@ -45,6 +45,10 @@ Please fork this repo. By 9:00am Friday, submit your work as a **pull request**.
 
 - Use data attached to your view model to display a list of all songs
 
+### Deploy
+
+- Use the Firebase CLI to deploy your application
+
 ### Bonus
 
 - Full CRUD for Songs
