@@ -4,7 +4,6 @@
   angular
     .module("songs")
     .directive("songPlayer", [
-      "$state",
       SongPlayerDirectiveFunction
     ])
     function SongPlayerDirectiveFunction($state){
