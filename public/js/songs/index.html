@@ -8,8 +8,8 @@
   <div class="song">
     <form>
       <input placeholder="Title" data-ng-model="SongsIndexViewModel.newSong.title">
-      <input placeholder="Audio_url" data-ng-model="SongsIndexViewModel.newSong.audio_url">
-      <input placeholder="Album_art" data-ng-model="SongsIndexViewModel.newSong.album_art">
+      <input placeholder="Audio Url" data-ng-model="SongsIndexViewModel.newSong.audio_url">
+      <input placeholder="Album Art" data-ng-model="SongsIndexViewModel.newSong.album_art">
       <input placeholder="Artist" data-ng-model="SongsIndexViewModel.newSong.artist">
       <input placeholder="Genre" data-ng-model="SongsIndexViewModel.newSong.genre">
       <button type="button" data-ng-click="SongsIndexViewModel.create()">Create</button>
@@ -36,8 +36,8 @@
     <div class="edit-form" data-ng-show="song.showEdit">
       <form>
         <input placeholder="Title" data-ng-model="song.title">
-        <input placeholder="Audio_url" data-ng-model="song.audio_url">
-        <input placeholder="Album_art" data-ng-model="song.album_art">
+        <input placeholder="Audio Url" data-ng-model="song.audio_url">
+        <input placeholder="Album Art" data-ng-model="song.album_art">
         <input placeholder="Artist" data-ng-model="song.artist">
         <input placeholder="Genre" data-ng-model="song.genre">
         <button type="button" data-ng-click="SongsIndexViewModel.update(song)">Update</button>
