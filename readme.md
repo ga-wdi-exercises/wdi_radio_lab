@@ -1,28 +1,14 @@
-# WDI Radio Lab
+# :fire: WDI Radio :fire:
 
-Please fork this repo. By  9:00am Friday, submit your work as a **pull request**.
+Please fork this repo. By 9:00am Friday, submit your work as a **pull request**.
 
 ## User Stories
 
-- As a user, we should be able to see all of our songs in the database.
-- As a user, when we first go to the app, we see a welcome page.
-- **Bonus**: As a user, when we select a song it starts playing.  The world is a better place
+- As a user, when I go to the app's root url, we should see a welcome page.
+- As a user, when I visit "/songs", I should be able to see all of the songs in my database.
+- **Bonus**: As a user, when we click on a song it starts playing. The world is a better place
 
 ## Setup
-
-### API Setup
-
-Fork and clone [this repo](https://github.com/ga-dc/wdi_radio_api). We'll be using a rails back end. It'll be a single model CRUD API for songs. Lets go into this directory and run all our initial Rails setup and run our server.
-
-```bash
-$ cd wdi_radio_api
-$ rake db:create
-$ rake db:migrate
-$ rake db:seed
-$ rails s
-```
-
-This will be the backend we'll be using, from http://localhost:3000.
 
 > What follows are not explicit steps. Just guidelines to approach building out this Angular application.
 
@@ -30,37 +16,40 @@ This will be the backend we'll be using, from http://localhost:3000.
 
 - Create a main directory for your `wdi_radio` application.
 - Create an `index.html` in your application's main directory.
+- Make sure to load in any appropriate libraries via CDNs
 - Create a skeleton for your content and include all dependencies.
 - Create the main `app.js` file and create the module for this angular app.
 - Create a module that defines songs.
 
-### Router
+### Firebase Setup
+
+- Create a new project in the [Firebase console](https://console.firebase.google.com/)
+- When prompted, make sure to choose the right most option: "Add Firebase to your web app".
+- After selecting the option, you should see a notification with a code snippet that contains your application's configuration credentials.
+- Make sure to include that snippet in your app's main `index.html` before any of your `js` files
+
+### Initialize a Router
 
 - Configure your app's routing in the `app.js`.
 - Add a state for the routes `/` and `/songs`.
 - Create templates for these routes.
 
-### Controller
+### Define a Controller
 
 - Create a controller file and define a controller to handle songs.
+- Access the data from firebase and save it as a property on the controller
 
-### Factory
+### Build Views
 
-- Create a factory for songs that point to the API we setup earlier.
-- Remember to inject this dependency into the controller.
-
-### Views
-
-- Use directives in the html to list all songs
+- Use data attached to your view model to display a list of all songs
 
 ### Bonus
 
 - Full CRUD for Songs
-- DRY up code utilizing Custom Directives
 
 ### Double Bonus
 
-Implement a "player" custom directive
+Implement a "player" [custom directive](https://github.com/ga-wdi-lessons/angular-directives)
 
 - When you click a song, a player view renders somewhere in the index
 - Get the song to play
