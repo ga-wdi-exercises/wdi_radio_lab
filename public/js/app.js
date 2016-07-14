@@ -4,6 +4,7 @@
   angular
     .module("wdiRadio", [
       "ui.router",
+      "firebase",
       "songs"
     ])
     .config([
@@ -23,5 +24,5 @@
           controller: "SongsIndexController",
           controllerAs: "SongsIndexViewModel"
         })
-    } // closes Router Function
+    }
 }());
