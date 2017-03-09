@@ -65,6 +65,8 @@ Implement a "player" using an Angular [custom directive](https://github.com/ga-w
 - When you click a song, a player view renders somewhere in the index
 - Get the song to play
 - Some options for the song player...
-  - Soundcloud embed
-  - Spotify embed
+  - [Soundcloud embed](http://shareandembed.help.soundcloud.com/customer/portal/articles/2167182-embedding-a-track-or-playlist-on-wordpress)
+  - [Spotify embed](https://developer.spotify.com/technologies/widgets/spotify-play-button/)
   - Stream a local audio file using the HTML `<audio>` tag
+
+> If you finish this bonus, look into how you could integrate [Spotify's API](https://developer.spotify.com/web-api/) into your WDI Radio app.
