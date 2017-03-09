@@ -49,16 +49,11 @@ Please fork this repo. By 5:00pm Thursday, March 9th, submit your work as a **pu
 
 - Implement full CRUD for Songs
 
-### Bonus II: Full CRUD Comments
-
-- Implement full CRUD for a new Comment model
-- Comments should be nested under Songs
-
-### Bonus III: Deploy to Firebase
+### Bonus II: Deploy to Firebase
 
 - Use [Firebase Hosting](https://firebase.google.com/docs/hosting/) to deploy your application
 
-### Bonus IV: Custom Player Directive
+### Bonus III: Custom Player Directive
 
 Implement a "player" using an Angular [custom directive](https://github.com/ga-wdi-lessons/angular-directives)
 
