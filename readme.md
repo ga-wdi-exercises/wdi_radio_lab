@@ -2,7 +2,7 @@
 
 > View deployed solution [here](https://wdi-radio.firebaseapp.com/)
 
-Please fork this repo. By 9:00am Friday, submit your work as a **pull request**.
+Please fork this repo. By 5:00pm Thursday, March 9th, submit your work as a **pull request**.
 
 ## User Stories
 
@@ -45,17 +45,26 @@ Please fork this repo. By 9:00am Friday, submit your work as a **pull request**.
 
 - Use data attached to your view model to display a list of all songs
 
-### Deploy
+### Bonus I: Full CRUD Songs
 
-- Use the Firebase CLI to deploy your application
+- Implement full CRUD for Songs
 
-### Bonus
+### Bonus II: Full CRUD Comments
 
-- Full CRUD for Songs
+- Implement full CRUD for a new Comment model
+- Comments should be nested under Songs
 
-### Double Bonus
+### Bonus III: Deploy to Firebase
 
-Implement a "player" [custom directive](https://github.com/ga-wdi-lessons/angular-directives)
+- Use [Firebase Hosting](https://firebase.google.com/docs/hosting/) to deploy your application
+
+### Bonus IV: Custom Player Directive
+
+Implement a "player" using an Angular [custom directive](https://github.com/ga-wdi-lessons/angular-directives)
 
 - When you click a song, a player view renders somewhere in the index
 - Get the song to play
+- Some options for the song player...
+  - Soundcloud embed
+  - Spotify embed
+  - Stream a local audio file using the HTML `<audio>` tag
