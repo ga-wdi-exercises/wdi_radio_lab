@@ -4,9 +4,9 @@ Please fork this repo. By 5:00pm Wednesday, May 10th, submit your work as a **pu
 
 ## User Stories
 
-- As a user, when I go to the app's root url, we should see a welcome page.
+- As a user, when I go to the app's root url, I should see a welcome page.
 - As a user, when I visit "/songs", I should be able to see all of the songs in my database.
-- **Bonus**: As a user, when we click on a song it starts playing. The world is a better place
+- **Bonus**: As a user, when I click on a song it starts playing. The world is a better place
 
 ## Setup
 
