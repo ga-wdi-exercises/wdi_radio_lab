@@ -1,6 +1,6 @@
 # WDI Radio
 
-Please fork this repo. By 5:00pm Wednesday, May 10th, submit your work as a **pull request**.
+Please fork this repo. By 9:00am Friday, June 23th, submit your work as a **pull request**.
 
 ## User Stories
 
