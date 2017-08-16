@@ -1,14 +1,15 @@
 # WDI Radio
 
-Please fork this repo. By 9:00am Friday, June 23th, submit your work as a **pull request**.
+## Requirements
 
-## User Stories
-
-- As a user, when I go to the app's root url, I should see a welcome page.
-- As a user, when I visit "/songs", I should be able to see all of the songs in my database.
-- **Bonus**: As a user, when I click on a song it starts playing. The world is a better place
+- The app should have a welcome page at the root path
+- The "/songs" path should be an index of songs in the database.
+- **Bonus**: CRUD functionality for songs
+- **Bonus**: Add ability to play a song (see details below)
 
 ## Setup
+
+- Fork and clone this repo. Create two directories in the repo -- one with the Rails server and one with the AngularJS front end. There will be two servers running, the Rails server and the http-server serving the AngularJS app. 
 
 > What follows are not explicit steps. Just guidelines to approach building out this Angular application.
 
