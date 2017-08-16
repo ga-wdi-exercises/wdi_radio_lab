@@ -1,5 +1,4 @@
-<h2>All Songs</h2>
-<p><a ui-sref="songsNew">Add Song</a></p>
+<h2>All Songs <a ui-sref="songsNew">(+)</a></h2>
 <p ng-repeat="song in vm.songs" >
   <a ui-sref="songsShow({ id: song.id })">
     {{ song.name }}

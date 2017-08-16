@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>WDIRadio</title>
+    <link rel="stylesheet" href="css/application.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular-resource.min.js"></script>
@@ -13,6 +14,12 @@
     <script src="js/controllers/songs.controller.js"></script>
   </head>
   <body ng-app="wdiRadio">
+    <nav>
+      <h1>WDIRadio</h1>
+      <div>
+        <a ui-sref="songsIndex">Songs</a>
+      </div>
+    </nav>
     <main ui-view>
     </main>
   </body>
