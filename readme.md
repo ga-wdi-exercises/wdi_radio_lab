@@ -25,7 +25,7 @@ JSON** for all songs in your database
 
 ### Angular Setup
 
-- Inside of `wdi-radio-client`, create an `index.html` in your
+- Inside of `wdi-radio-client`, create an `index.html`
 - Make sure to load in any appropriate libraries via CDNs
 - Create a `js` directory to store all of your Javascript files
 - Create the main `app.js` file and define the module for the angular app
