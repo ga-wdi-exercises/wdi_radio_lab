@@ -17,7 +17,7 @@
 > What follows are not explicit steps. Just guidelines to approach building out this Angular application.
 
 ### Rails Setup
-- Run `rails new -d postgresql wdi_radio_api` to create a new rails app for your back end
+- **Inside** of `wdi-radio-server`, run `rails new -d postgresql .` to create a new rails app for your back end
 - Set up a model and run a migration for songs
 - Write seed data to create instances of songs
 - Define a controller for songs that has at least an `index` method that **renders
@@ -25,8 +25,7 @@ JSON** for all songs in your database
 
 ### Angular Setup
 
-- Create a main directory for your `wdi_radio` application
-- Create an `index.html` in your application's main directory
+- Inside of `wdi-radio-client`, create an `index.html` in your
 - Make sure to load in any appropriate libraries via CDNs
 - Create a `js` directory to store all of your Javascript files
 - Create the main `app.js` file and define the module for the angular app
