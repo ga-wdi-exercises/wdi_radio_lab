@@ -63,4 +63,4 @@ Implement a "player" using an Angular [custom directive](https://github.com/ga-w
   - [Spotify embed](https://developer.spotify.com/technologies/widgets/spotify-play-button/)
   - Stream a local audio file using the HTML `<audio>` tag
 
-> If you finish this bonus, look into how you could integrate [Spotify's API](https://developer.spotify.com/web-api/) into your WDI Radio app.
+> If you finish this bonus, look into how you could integrate [Spotify's API](https://developer.spotify.com/web-api/) or [Apple's API](https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/) into your WDI Radio app.
