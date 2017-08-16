@@ -1,4 +1,5 @@
 <h2>{{ vm.song.name }}</h2>
+<p><a ui-sref="songsEdit({ id: vm.song.id })">Edit Song</a></p>
 <audio ng-src="{{ vm.song.preview_url }}" controls></audio>
 <h3>Artist</h3>
 <p>{{ vm.song.artist.name }}</p>

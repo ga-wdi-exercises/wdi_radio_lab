@@ -1,0 +1,28 @@
+<h2>New Song</h2>
+<form>
+<p>
+  <label>Name</label>
+  <input type="text" ng-model="vm.song.name">
+</p>
+<p>
+  <label>Preview Url</label>
+  <input type="text" ng-model="vm.song.preview_url">
+</p>
+<p>
+  <label>Artist</label>
+  <select ng-model="vm.song.artist_id" ng-change="vm.updateAlbumList()">
+    <option ng-repeat="artist in vm.artists" value="{{ artist.id }}" ng-selected="artist.id == vm.selectedArtist.id">
+      {{ artist.name }}
+    </option>
+  </select>
+</p>
+<p>
+  <label>Album</label>
+  <select ng-model="vm.song.album_id" ng-change="vm.updateArtistList()">
+    <option ng-repeat="album in vm.albums" value="{{ album.id }}">
+      {{ album.name }}
+    </option>
+  </select>
+</p>
+  <button type="submit" ng-click="vm.create()">Save</button>
+</form>
