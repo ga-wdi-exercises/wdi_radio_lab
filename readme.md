@@ -10,7 +10,7 @@
 ## Setup
 
 - Create two repos: `wdi-radio-server` and `wdi-radio-client`
-- Create an issue on this repo with links to both repos.
+- To submit, you will create an issue on this repo with links to both repos.
     - Issue should also (as always) include levels of **comfort** and **completion** as well as any specific questions you would like answered by your reviewing instructor.
     - If you would like to create the issue immediately after creating the repos that is fine but come back to add comfort, completion, and questions (click the pencil in the corner of your issue to edit it).
 
