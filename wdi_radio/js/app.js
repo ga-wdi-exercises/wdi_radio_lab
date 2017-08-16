@@ -19,6 +19,12 @@
         controllerAs: 'vm',
         templateUrl: 'js/views/songs/index.html'
       })
+      .state('songsShow', {
+        url: '/songs/:id',
+        controller: 'SongsShow',
+        controllerAs: 'vm',
+        templateUrl: 'js/views/songs/show.html'
+      })
     $urlRouterProvider.otherwise('/songs')
   }
 

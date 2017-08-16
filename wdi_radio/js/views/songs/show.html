@@ -1,0 +1,8 @@
+<h2>{{ vm.song.name }}</h2>
+<h3>Artist</h3>
+<p>{{ vm.song.artist.name }}</p>
+<h3>Album</h3>
+<div>
+  <p>{{ vm.song.album.name }}</p>
+  <img ng-src="{{ vm.song.album.image_url }}" alt="{{ vm.song.album.name }}">
+</div>
