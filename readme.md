@@ -9,7 +9,10 @@
 
 ## Setup
 
-- Fork and clone this repo. Create two directories in the repo -- one with the Rails server and one with the AngularJS front end. There will be two servers running, the Rails server and the http-server serving the AngularJS app. 
+- Create two repos: `wdi-radio-server` and `wdi-radio-client`
+- Create an issue on this repo with links to both repos.
+    - Issue should also (as always) include levels of **comfort** and **completion** as well as any specific questions you would like answered by your reviewing instructor.
+    - If you would like to create the issue immediately after creating the repos that is fine but come back to add comfort, completion, and questions (click the pencil in the corner of your issue to edit it).
 
 > What follows are not explicit steps. Just guidelines to approach building out this Angular application.
 
