@@ -2,6 +2,10 @@ body {
   margin: 0;
 }
 
+main {
+  margin-bottom: 200px;
+}
+
 nav {
   display: flex;
   justify-content: flex-start;
