@@ -1,0 +1,15 @@
+<div class="player">
+  <img ng-src="{{ song.album.image_url }}" alt="">
+  <div class="song-display">
+    <div class="song-info">
+      <div>
+        <p>{{ song.name }}</p>
+        <p>{{ song.album.name }}</p>
+      </div>
+      <div>
+        <p>{{ song.artist.name }}</p>
+      </div>
+    </div>
+    <audio ng-src="{{ song.preview_url }}" controls autoplay></audio>
+  </div>
+</div>

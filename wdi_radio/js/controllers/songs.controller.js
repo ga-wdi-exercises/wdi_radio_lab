@@ -4,6 +4,7 @@
     .module('wdiRadio')
     .controller('SongsIndex', [
       'Song',
+      '$sce',
       SongsIndex
     ])
     .controller('SongsShow', [
@@ -26,8 +27,15 @@
       SongsEdit
     ])
 
-  function SongsIndex (Song) {
+  function SongsIndex (Song, $sce) {
     this.songs = Song.query()
+    this.selectSong = function (song) {
+      song.preview_url
+      song.preview_url = $sce.trustAsResourceUrl(song.preview_url)
+      console.log(song.album.image_url)
+      song.album.image_url = song.album.image_url.replace('100x100', `200x200`)
+      this.selectedSong = song
+    }
   }
 
   function SongsShow($stateParams, $sce, Song) {

@@ -1,6 +1,13 @@
-<h2>All Songs <a ui-sref="songsNew">(+)</a></h2>
-<p ng-repeat="song in vm.songs" >
-  <a ui-sref="songsShow({ id: song.id })">
-    {{ song.name }}
-  </a>
-</p>
+<div class="song-gallery">
+  <h2>All Songs <a ui-sref="songsNew">(+)</a></h2>
+  <p ng-repeat="song in vm.songs" >
+    <button ng-click="vm.selectSong(song)">
+      &#9654;
+    </button>
+    <a ui-sref="songsShow({ id: song.id })">
+      {{ song.name }}
+    </a>
+  </p>
+</div>
+
+<song-player song="vm.selectedSong" ng-show="vm.selectedSong"></song-player>
