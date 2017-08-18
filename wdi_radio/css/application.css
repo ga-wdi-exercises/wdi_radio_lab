@@ -33,6 +33,49 @@ nav a:hover {
   background: rgba(255, 255, 255, 0.2);
 }
 
-main {
-  padding: 0 20px;
+.song-gallery {
+  padding: 20px;
+}
+
+.player {
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.player img {
+  height: 200px;
+  width: auto;
+}
+
+.song-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+  height: 200px;
+}
+
+.song-display > div {
+  padding: 20px;
+}
+
+.song-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.player audio {
+  width: 100%;
 }
