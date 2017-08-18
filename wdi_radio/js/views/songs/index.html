@@ -1,4 +1,4 @@
-<div class="song-gallery">
+<div class="song-gallery" ng-style="{ 'margin-bottom': vm.selectedSong ? '200px' : '0' }">
   <h2>All Songs <a ui-sref="songsNew">(+)</a></h2>
   <p ng-repeat="song in vm.songs" >
     <button ng-click="vm.selectSong(song)">
