@@ -53,7 +53,7 @@ nav a:hover {
   color: white;
 }
 
-.player img {
+.player .album-image {
   height: 200px;
   width: auto;
 }
@@ -82,4 +82,13 @@ nav a:hover {
 
 .player audio {
   width: 100%;
+}
+
+.close-player {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  padding: 10px;
+  cursor: pointer;
 }

@@ -1,5 +1,6 @@
 <div class="player">
-  <img ng-src="{{ song.album.image_url }}" alt="">
+  <img ng-click="closePlayer()" src="images/close_window_icon.png" alt="close song player" class="close-player">
+  <img ng-src="{{ song.album.image_url }}" alt="{{ song.album.name }}" class="album-image">
   <div class="song-display">
     <div class="song-info">
       <div>
@@ -10,6 +11,6 @@
         <p>{{ song.artist.name }}</p>
       </div>
     </div>
-    <audio ng-src="{{ song.preview_url }}" controls autoplay></audio>
+    <audio id="song-player" ng-src="{{ song.preview_url }}" controls autoplay></audio>
   </div>
 </div>
