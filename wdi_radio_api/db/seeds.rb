@@ -10,14 +10,21 @@ Album.destroy_all
 Artist.destroy_all
 
 artists = [
+  'Tritonal',
+  'Galantis',
+  'Ellie Goulding',
+  'Jay Z',
+  'Katy Perry',
   'Chainsmokers',
   'Daft Punk',
+  'Taylor Swift',
   'J. Cole',
   'Kanye West',
   'Coldplay',
   'Diplo'
 ]
 
+puts 'Artists------'
 artists.each do |artist|
   artist_data = JSON.parse(HTTParty.get("https://itunes.apple.com/search?term=#{artist}&media=music&entity=musicArtist"))["results"][0]
   new_artist = Artist.create!(
@@ -28,10 +35,11 @@ artists.each do |artist|
   puts new_artist.name
 end
 
-
+puts 'Albums------'
 Artist.all.each do |artist|
-  album_list = JSON.parse(HTTParty.get("https://itunes.apple.com/lookup?id=#{artist.itunes_id}&media=music&entity=album"))["results"][1..3]
-  album_list.each do |album|
+  album_list = JSON.parse(HTTParty.get("https://itunes.apple.com/lookup?id=#{artist.itunes_id}&media=music&entity=album"))["results"]
+  album_list.shift
+  album_list.sample(5).each do |album|
     new_album = Album.create!(
       name: album["collectionName"],
       image_url: album["artworkUrl100"],
@@ -42,9 +50,11 @@ Artist.all.each do |artist|
   end
 end
 
+puts 'Songs------'
 Album.all.each do |album|
-  song_list = JSON.parse(HTTParty.get("https://itunes.apple.com/lookup?id=#{album.itunes_id}&media=music&entity=song"))["results"][1..3]
-  song_list.each do |song|
+  song_list = JSON.parse(HTTParty.get("https://itunes.apple.com/lookup?id=#{album.itunes_id}&media=music&entity=song"))["results"]
+  song_list.shift
+  song_list.sample(3).each do |song|
     new_song = Song.create!(
       name: song["trackName"],
       preview_url: song["previewUrl"],
